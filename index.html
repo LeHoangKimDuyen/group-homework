@@ -1,231 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nhóm</title>
-    
-    <!-- Google Fonts: Plus Jakarta Sans cho phong cách hiện đại, tinh tế -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS CSS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- CSS (Thứ tự nạp quan trọng để cascade chuẩn) -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/projects.css">
-</head>
-<body>
 
+    <!-- Google Fonts: Plus Jakarta Sans cho phong cách hiện đại, tinh tế -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS (Thứ tự nạp quan trọng để cascade chuẩn) -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
     <!-- Header / Navigation Bar -->
     <header class="header">
-        <div class="container header-container">
-            <div class="logo">Steve Jobs <span>Portfolio</span></div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link">Trang chủ</a></li>
-                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
-                    <li><a href="#projects" class="nav-link">Dự án</a></li>
-                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-container">
+        <div class="logo">Steve Jobs <span>Portfolio</span></div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Section 1: Hero -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Steve Jobs</span></h1>
-                    <h2 class="hero-role">Co-Founder, Product Visionary & Business Leader</h2>
-                    <p class="hero-description">
-                        Tôi là một nhà kiến tạo công nghệ với niềm đam mê định hình tương lai thông qua những sản phẩm đột phá, tối giản và hướng đến trải nghiệm người dùng tối ưu. Mục tiêu của tôi là kết 
-                        hợp giữa nghệ thuật thiết kế và công nghệ đỉnh cao để tạo ra những sản phẩm thay đổi hoàn toàn cách thế giới kết nối và làm việc.
+      <!-- Section 1: Hero -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Hello, I'm <span class="highlight">Steve Jobs</span>
+            </h1>
+            <h2 class="hero-role">
+              Co-Founder, Product Visionary & Business Leader
+            </h2>
+            <p class="hero-description">
+              I am a technology innovator passionate about shaping the future
+              through revolutionary, minimalist, and user-centric products. My
+              goal is to marry liberal arts with technology to create products
+              that redefine how the world connects and works.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: About Me -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 data-aos="fade-up">About Me</h2>
+          <div class="about-content">
+            <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+              <p>
+                Driven by exceptional Design Thinking and strategic product
+                vision, I believe a great product must not only look beautiful
+                but also deliver an intuitive, emotional user experience. My
+                guiding philosophy: 'Simplicity is the ultimate sophistication'
+                — every detail must serve a clear purpose.
+              </p>
+            </div>
+            <div class="about-skills" data-aos="fade-up" data-aos-delay="200">
+              <h3>Skills & Leadership</h3>
+              <div class="skills-wrapper">
+                <span class="badge">Product Strategy</span>
+                <span class="badge">UX Design Vision</span>
+                <span class="badge">Create Direction</span>
+                <span class="badge">Business Leadership</span>
+                <span class="badge">Public Speaking</span>
+                <span class="badge">Team Building</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Projects (Steve Jobs Case Studies - Thành viên B) -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="projects-header" data-aos="fade-up">
+            <h2 class="section-heading">Legendary Case Studies</h2>
+            <p class="section-subheading">
+              Breakthrough innovations that redefined the history of technology.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Case Study 1: The Original Macintosh -->
+            <div class="card-wrapper" data-aos="fade-up" data-aos-delay="200">
+              <div class="flip-card">
+                <!-- Mặt trước -->
+                <div class="card-face card-front">
+                  <div class="card-image mac-img"></div>
+                  <div class="card-content">
+                    <span class="project-year">1984</span>
+                    <h3 class="project-title">The Original Macintosh</h3>
+                    <p class="problem-statement">
+                      Led the team to build the world's first personal computer
+                      with a graphical user interface.
                     </p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-                        <a href="#contact" class="btn btn-secondary">Liên hệ</a>
-                    </div>
+                  </div>
                 </div>
+                <!-- Mặt sau -->
+                <div class="card-face card-back">
+                  <div class="back-content">
+                    <p class="role-tag">Co-Founder & Product Visionary</p>
+                    <div class="info-block">
+                      <h4>PROCESS:</h4>
+                      <p>
+                        Nghiên cứu và thương mại hóa công nghệ GUI + Chuột máy
+                        tính &rarr; Định hình thiết kế kiểu dáng "All-in-one"
+                        &rarr; Trực tiếp điều hành dự án phát triển hệ điều hành
+                        Mac OS đời đầu.
+                      </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>IMPACT:</h4>
+                      <p>
+                        Định nghĩa lại ngành công nghiệp máy tính cá nhân toàn
+                        cầu, đưa máy tính trở nên gần gũi với người dùng đại
+                        chúng.
+                      </p>
+                    </div>
+                    <button class="cta-btn">View Project</button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Section 2: About Me -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 data-aos="fade-up">Về tôi</h2>
-                <div class="about-content">
-                    <div class="about-text" data-aos="fade-up" data-aos-delay="100">
-                        <p>Với nền tảng tư duy thiết kế (Design Thinking) xuất sắc và tầm nhìn chiến lược về sản phẩm, tôi tin rằng một sản phẩm vĩ đại không chỉ cần đẹp mắt mà phải mang lại trải nghiệm sử dụng trực quan và lay động cảm xúc. Triết lý làm việc của tôi là "Đơn giản chính là sự tinh tế tối thượng" - mọi chi tiết nhỏ đều phải phục vụ một mục đích rõ ràng.</p>
-                    </div>
-                    <div class="about-skills" data-aos="fade-up" data-aos-delay="200">
-                        <h3>Kỹ năng & Công cụ</h3>
-                        <div class="skills-wrapper">
-                            <span class="badge">Product Strategy</span>
-                            <span class="badge">UX Design Vision</span>
-                            <span class="badge">Create Direction</span>
-                            <span class="badge">Business Leadership</span>
-                            <span class="badge">Public Speaking</span>
-                            <span class="badge">Team Building</span>
-                        </div>
-                    </div>
+            <!-- Case Study 2: NeXT Computer & NeXTSTEP OS -->
+            <div class="card-wrapper" data-aos="fade-up" data-aos-delay="300">
+              <div class="flip-card">
+                <!-- Mặt trước -->
+                <div class="card-face card-front">
+                  <div class="card-image next-img"></div>
+                  <div class="card-content">
+                    <span class="project-year">1985–1996</span>
+                    <h3 class="project-title">NeXT Computer & OS</h3>
+                    <p class="problem-statement">
+                      Built high-end workstation OS that laid the foundation for
+                      macOS and the World Wide Web.
+                    </p>
+                  </div>
                 </div>
+                <!-- Mặt sau -->
+                <div class="card-face card-back">
+                  <div class="back-content">
+                    <p class="role-tag">Founder & CEO</p>
+                    <div class="info-block">
+                      <h4>PROCESS:</h4>
+                      <p>
+                        Thiết kế phần cứng thùng máy lập phương (NeXT Cube)
+                        &rarr; Đổi mới kiến trúc OS dựa trên Mach kernel.
+                      </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>IMPACT:</h4>
+                      <p>
+                        Nền tảng ra đời của World Wide Web (Tim Berners-Lee) và
+                        là tiền thân của macOS/iOS.
+                      </p>
+                    </div>
+                    <button class="cta-btn">View Project</button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Section 3: Projects (Steve Jobs Case Studies - Thành viên B) -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <div class="projects-header" data-aos="fade-up">
-                    <h2 class="section-heading">Steve Jobs: Legendary Case Studies</h2>
-                    <p class="section-subheading">Những phát kiến mang tính bước ngoặt định hình lại lịch sử công nghệ thế giới.</p>
+            <!-- Case Study 3: iPhone -->
+            <div class="card-wrapper" data-aos="fade-up" data-aos-delay="400">
+              <div class="flip-card">
+                <!-- Mặt trước -->
+                <div class="card-face card-front">
+                  <div class="card-image iphone-img"></div>
+                  <div class="card-content">
+                    <span class="project-year">2007</span>
+                    <h3 class="project-title">The Revolutionary iPhone</h3>
+                    <p class="problem-statement">
+                      Combined three products: a widescreen iPod, a
+                      revolutionary mobile phone, and a breakthrough Internet
+                      communicator.
+                    </p>
+                  </div>
                 </div>
-
-                <div class="projects-grid">
-                    <!-- Case Study 1: The Original Macintosh -->
-                    <div class="card-wrapper" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flip-card">
-                            <!-- Mặt trước -->
-                            <div class="card-face card-front">
-                                <div class="card-image mac-img"></div>
-                                <div class="card-content">
-                                    <span class="project-year">1984</span>
-                                    <h3 class="project-title">Co-Founder & Product Visionary @ Apple Inc</h3>
-                                    <p class="problem-statement"><strong>Mô tả ngắn:</strong> Dẫn dắt đội ngũ phát triển dòng máy tính cá nhân đầu tiên trên thế giới tích hợp giao diện đồ họa (GUI) và chuột máy tính.</p>
-                                </div>
-                            </div>
-                            <!-- Mặt sau -->
-                            <div class="card-face card-back">
-                                <div class="back-content">
-                                    <p class="role-tag">Co-Founder & Product Visionary</p>
-                                    <div class="info-block">
-                                        <h4>Trách nhiệm chính:</h4>
-                                        <p>Nghiên cứu và thương mại hóa công nghệ GUI + Chuột máy tính &rarr; Định hình thiết kế kiểu dáng "All-in-one" &rarr; Trực tiếp điều hành dự án phát triển hệ điều hành Mac OS đời đầu.</p>
-                                    </div>
-                                    <div class="info-block">
-                                        <h4>Thành tựu:</h4>
-                                        <p>Định nghĩa lại ngành công nghiệp máy tính cá nhân toàn cầu, đưa máy tính trở nên gần gũi với người dùng đại chúng.</p>
-                                    </div>
-                                    <button class="cta-btn">View Project</button>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Mặt sau -->
+                <div class="card-face card-back">
+                  <div class="back-content">
+                    <p class="role-tag">CEO Apple Inc.</p>
+                    <div class="info-block">
+                      <h4>PROCESS:</h4>
+                      <p>
+                        Loại bỏ bàn phím cơ &rarr; Màn hình cảm ứng điện dung đa
+                        điểm &rarr; Tích hợp iPod + Phone + Internet.
+                      </p>
                     </div>
-
-                    <!-- Case Study 2: NeXT Computer & NeXTSTEP OS -->
-                    <div class="card-wrapper" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flip-card">
-                            <!-- Mặt trước -->
-                            <div class="card-face card-front">
-                                <div class="card-image next-img"></div>
-                                <div class="card-content">
-                                    <span class="project-year">1985 - 1996</span>
-                                    <h3 class="project-title">Founder & CEO @ NeXT Computer </h3>
-                                    <p class="problem-statement"><strong>Mô tả ngắn:</strong> Xây dựng hệ thống máy tính máy trạm cao cấp và phát triển hệ điều hành hướng đối tượng thế hệ mới dành cho giáo dục và doanh nghiệp.</p>
-                                </div>
-                            </div>
-                            <!-- Mặt sau -->
-                            <div class="card-face card-back">
-                                <div class="back-content">
-                                    <p class="role-tag">Founder & CEO</p>
-                                    <div class="info-block">
-                                        <h4>Quy trình:</h4>
-                                        <p>Thiết kế phần cứng thùng máy lập phương (NeXT Cube) &rarr; Đổi mới kiến trúc OS dựa trên Mach kernel.</p>
-                                    </div>
-                                    <div class="info-block">
-                                        <h4>Thành tựu:</h4>
-                                        <p>Nền tảng ra đời của World Wide Web (Tim Berners-Lee) và là tiền thân của macOS/iOS.</p>
-                                    </div>
-                                    <button class="cta-btn">View Project</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="info-block">
+                      <h4>IMPACT:</h4>
+                      <p>
+                        Tái định hình lại toàn bộ ngành công nghiệp di động thế
+                        giới.
+                      </p>
                     </div>
-
-                    <!-- Case Study 3: iPhone -->
-                    <div class="card-wrapper" data-aos="fade-up" data-aos-delay="400">
-                        <div class="flip-card">
-                            <!-- Mặt trước -->
-                            <div class="card-face card-front">
-                                <div class="card-image iphone-img"></div>
-                                <div class="card-content">
-                                    <span class="project-year">2007</span>
-                                    <h3 class="project-title">CEO @ Apple Inc</h3>
-                                    <p class="problem-statement"><strong>Mô tả ngắn:</strong> Định nghĩa khái niệm điện thoại thông minh bằng việc ra mắt iPhone, kết hợp ba sản phẩm trong một thiết bị duy nhất.</p>
-                                </div>
-                            </div>
-                            <!-- Mặt sau -->
-                            <div class="card-face card-back">
-                                <div class="back-content">
-                                    <p class="role-tag">CEO Apple Inc.</p>
-                                    <div class="info-block">
-                                        <h4>Quy trình:</h4>
-                                        <p>Loại bỏ bàn phím cơ &rarr; Màn hình cảm ứng điện dung đa điểm &rarr; Tích hợp iPod + Phone + Internet.</p>
-                                    </div>
-                                    <div class="info-block">
-                                        <h4>Kết quả:</h4>
-                                        <p>Tái định hình lại toàn bộ ngành công nghiệp di động thế giới.</p>
-                                    </div>
-                                    <button class="cta-btn">View Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="cta-btn">View Project</button>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Section 4: Contact / Footer -->
-    <footer id="contact" class="footer-section">
-        <div class="container footer-container">
-            <div class="contact-form-wrapper" data-aos="fade-right">
-                <h2>Liên hệ với chúng tôi</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Họ tên" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Tin nhắn của bạn" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Gửi tin nhắn</button>
-                </form>
-            </div>
-            
-            <div class="footer-info" data-aos="fade-left" data-aos-delay="100">
-                <div class="contact-details">
-                    <h3>Email</h3>
-                    <p><a href="mailto:s.jobs@apple.com">s.jobs@apple.com</a></p>
-                </div>
-                <div class="cv-download">
-                    <a href="#" class="btn btn-secondary">Tải CV (PDF)</a>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-icon">LinkedIn</a>
-                    <a href="#" class="social-icon">GitHub</a>
-                    <a href="#" class="social-icon">Behance</a>
-                </div>
-            </div>
+    <!-- Section 4: Contact -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container" data-aos="fade-up">
+        <h2 style="color: aliceblue">Let's Connect</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <div class="contact-footer">
+          <p>
+            Or reach out directly at:
+            <a href="mailto:s.jobs@apple.com" class="email-link"
+              >s.jobs@apple.com</a
+            >
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">GitHub</a>
+            <a href="#" class="social-icon">Behance</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
     <!-- AOS JS (Nhúng trước body) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Khởi tạo AOS với Cubic-Bezier thông số Apple
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50
-        });
+      // Khởi tạo AOS với Cubic-Bezier thông số Apple
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 50,
+      });
     </script>
-</body>
+  </body>
 </html>
