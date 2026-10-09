@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Section Contact - Apple Minimalist Aesthetic
+   ========================================================================== */
+
+/* 1. Bố cục căn giữa màn hình (Centered Layout) */
+.contact-section {
+    background-color: #1c1c1e; /* Màu nền Dark Charcoal */
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 680px; /* Tập trung form ở giữa màn hình */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+/* 2. Tinh chỉnh giao diện Form & Input */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06); /* Nền trong suốt mờ nhẹ */
+    border: 1px solid rgba(255, 255, 255, 0.12); /* Đường viền mỏng */
+    border-radius: 12px; /* Bo góc */
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #ffffff; /* Chữ màu trắng */
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #86868b; /* Placeholder màu xám bạc */
+}
+
+/* Hiệu ứng Focus cho Input / Textarea */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0066cc; /* Viền đổi màu xanh Apple */
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.2); /* Hiệu ứng shadow mượt mà */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Nút Submit */
+.btn-submit {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Chuyển động mượt mà */
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 3. Thông tin liên hệ & Social Links (Footer Contact) */
+.contact-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Vạch ngang mỏng mờ */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-footer p {
+    font-size: 1rem;
+    color: #86868b;
+}
+
+.email-link {
+    color: #2997ff; /* Link email màu xanh sáng */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #5facff;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    color: #86868b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffffff; /* Hover chuyển từ xám sang trắng */
+}
