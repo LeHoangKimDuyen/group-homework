@@ -2,29 +2,30 @@
    GLOBAL CSS - "SMART INTERFACE" DESIGN
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
 :root {
-  /* Bảng màu trung tính (Neutral Colors) của Thành viên A */
-  --color-charcoal: #2E3440;
+  /* Bảng màu trung tính (Neutral Colors) */
+  --color-charcoal: #2e3440;
   --color-slate-grey: #708090;
-  --color-off-white: #FAF9F6;
-  --color-warm-taupe: #AFA292;
-  --color-white: #FFFFFF;
-  
-  --font-main: 'Plus Jakarta Sans', sans-serif;
-  
+  --color-off-white: #faf9f6;
+  --color-warm-taupe: #afa292;
+  --color-white: #ffffff;
+
+  --font-main: "Plus Jakarta Sans", sans-serif;
+
   /* PROMPT BẬC THẦY: Smooth Outflow chuẩn Apple */
   --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 
-  /* BỔ SUNG: Biến màu sắc & Hiệu ứng Apple riêng cho Projects (Thành viên B) */
+  /* BỔ SUNG: Biến màu sắc & Hiệu ứng Apple riêng cho Projects*/
   --apple-jet-black: #000000;
-  --apple-space-grey: #1C1C1E;
-  --apple-graphite: #2C2C2E;
-  --apple-silver: #E5E5EA;
+  --apple-space-grey: #1c1c1e;
+  --apple-graphite: #2c2c2e;
+  --apple-silver: #e5e5ea;
   --apple-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
   --apple-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.2);
-  --transition-elastic: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.6s ease;
+  --transition-elastic:
+    transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.6s ease;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -56,9 +57,19 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
+}
+
+h1,
+h2 {
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -190,7 +201,7 @@ h2 {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -214,36 +225,59 @@ h2 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/stevenjobs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  z-index: -1;
 }
 
 .hero-content {
   max-width: 800px;
   animation: fadeSlideUp 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
-  opacity: 0; 
+  opacity: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: var(--color-white);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title .highlight {
-  color: var(--color-warm-taupe);
+  color: var(--color-off-white);
 }
 
 .hero-role {
   font-size: 1.8rem;
-  color: var(--color-slate-grey);
+  color: var(--color-off-white);
   margin-bottom: 1.5rem;
   font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-description {
   font-size: 1.1rem;
-  color: var(--color-charcoal);
+  color: var(--color-white);
   margin-bottom: 2.5rem;
   max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-cta {
@@ -251,11 +285,22 @@ h2 {
   gap: 1rem;
 }
 
+.hero-section .btn-secondary {
+  color: var(--color-white);
+  border-color: var(--color-white);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .btn-secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+}
+
 /* ==========================================================================
    ABOUT ME SECTION
    ========================================================================== */
 .about-section {
-  padding: 5rem 0;
+  padding: 100px 0;
   background-color: var(--color-white);
 }
 
@@ -297,7 +342,7 @@ h2 {
    Tối ưu 60fps - Chuyển động Elastic/Bouncy chuẩn Apple
    ========================================================================== */
 .projects-section {
-  padding: 6rem 0;
+  padding: 100px 0;
 }
 
 .projects-header {
@@ -384,13 +429,14 @@ h2 {
 
 /* Ảnh minh họa case study */
 .mac-img {
-  background-image: url('https://images.unsplash.com/photo-1517430816045-df4b7ef11df1?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80');
+  background-image: url("../img/images.jpg");
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .next-img {
-  background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80');
+  background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80");
 }
 .iphone-img {
-  background-image: url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80');
+  background-image: url("https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80");
 }
 
 .card-content {
@@ -416,8 +462,8 @@ h2 {
 
 .problem-statement {
   font-size: 0.92rem;
-  color: #4C566A;
-  line-height: 1.55;
+  color: #4c566a;
+  line-height: 1.6;
 }
 
 /* --- MẶT SAU (BACK SIDE - SPACE GREY & GRAPHITE) --- */
@@ -464,8 +510,8 @@ h2 {
 
 .info-block p {
   font-size: 0.88rem;
-  line-height: 1.5;
-  color: #D8DEE9;
+  line-height: 1.6;
+  color: #d8dee9;
 }
 
 /* Nút CTA mặt sau: Micro-interaction scale(0.96) tức thì */
@@ -496,7 +542,7 @@ h2 {
    CONTACT / FOOTER
    ========================================================================== */
 .footer-section {
-  padding: 5rem 0;
+  padding: 100px 0;
   background-color: var(--color-charcoal);
   color: var(--color-off-white);
 }
@@ -536,12 +582,15 @@ h2 {
 
 .btn-submit {
   width: 100%;
-  background-color: var(--color-warm-taupe);
+  background-color: var(--color-charcoal);
+  transition: var(--transition-smooth);
 }
 
 .btn-submit:hover {
-  background-color: var(--color-off-white);
-  color: var(--color-charcoal);
+  background-color: var(--apple-space-grey);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--apple-shadow-soft);
 }
 
 .footer-info {
